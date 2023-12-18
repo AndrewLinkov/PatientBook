@@ -9,8 +9,11 @@ public class MainController {
 
     //метод вызывает старницу
     @GetMapping("/")
-    public String greeting(Model model) {
-        model.addAttribute("title", "Главная страница");
+    public String home() {
         return "home";
+    }
+    @GetMapping("/dataPatient")
+    public String dataPatient() {
+        return "dataPatient";
     }
 }
