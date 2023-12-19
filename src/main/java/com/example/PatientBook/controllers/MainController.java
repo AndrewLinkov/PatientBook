@@ -6,14 +6,26 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-
-    //метод вызывает старницу
     @GetMapping("/")
-    public String home() {
+    public String greeting(Model model) {
+        model.addAttribute("title", "Главная старница");
         return "home";
     }
-    @GetMapping("/dataPatient")
-    public String dataPatient() {
-        return "dataPatient";
+
+
+    @GetMapping("/about")
+    public String about(Model model) {
+        model.addAttribute("title", "Страница про нас");
+        return "about";
     }
+
+    //метод вызывает старницу
+//    @GetMapping("/")
+//    public String home(Model model) {
+//        return "home";
+//    }
+//    @GetMapping("/dataPatient")
+//    public String dataPatient(Model model) {
+//        return "dataPatient";
+//    }
 }
