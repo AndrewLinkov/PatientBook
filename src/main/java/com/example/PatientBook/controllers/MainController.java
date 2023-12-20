@@ -12,7 +12,6 @@ public class MainController {
         return "home";
     }
 
-
     @GetMapping("/about")
     public String about(Model model) {
         model.addAttribute("title", "Страница про нас");
@@ -24,8 +23,8 @@ public class MainController {
 //    public String home(Model model) {
 //        return "home";
 //    }
-//    @GetMapping("/dataPatient")
-//    public String dataPatient(Model model) {
-//        return "dataPatient";
-//    }
+    @GetMapping("/dataPatient")
+    public String dataPatient(Model model) {
+        return "dataPatient";
+    }
 }
