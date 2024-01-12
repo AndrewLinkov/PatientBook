@@ -7,5 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PatientBookApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PatientBookApplication.class, args);
+
 	}
 }
