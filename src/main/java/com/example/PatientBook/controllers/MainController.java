@@ -12,19 +12,14 @@ public class MainController {
         return "home";
     }
 
+    @GetMapping("/newProfile")
+    public String newProfile(Model model) {
+        return "newProfile";
+    }
+
     @GetMapping("/about")
     public String about(Model model) {
         model.addAttribute("title", "Страница про нас");
         return "about";
-    }
-
-    //метод вызывает старницу
-//    @GetMapping("/")
-//    public String home(Model model) {
-//        return "home";
-//    }
-    @GetMapping("/dataPatient")
-    public String dataPatient(Model model) {
-        return "dataPatient";
     }
 }
