@@ -14,6 +14,7 @@ public class MainController {
 
     @GetMapping("/newProfile")
     public String newProfile(Model model) {
+        model.addAttribute("title", "Страница новая анкета");
         return "newProfile";
     }
 
